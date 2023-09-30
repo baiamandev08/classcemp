@@ -744,16 +744,28 @@ body {
 #fea {
     background: #0A0A0A;
 }
-.fea{
-    display: flex;
-    justify-content: space-evenly;
-}
+
 
 .fea h1 {
-    padding: 110px 0 170px 0;
+
+    /*padding: 110px 0 170px 0;*/
     color: #FFF;
     font-size: 58px;
     font-weight: 400;
+}
+.logo h1{
+    padding: 100px 0 100px 0;
+}
+
+
+
+.fea-general {
+    display: flex;
+    justify-content: space-between
+}
+
+.fea-one {
+    display: flex;
 }
 
 .fea-block {
@@ -773,13 +785,6 @@ body {
     text-transform: uppercase;
 }
 
-.fea-block h1 {
-    padding: 17px 0 23px 0;
-    color: #FFF;
-    font-size: 29px;
-    font-weight: 400;
-    line-height: 36px;
-}
 
 .fea-block p {
     color: #FFF;
@@ -794,6 +799,7 @@ body {
     font-weight: 400;
     line-height: 22px;
 }
+
 
 .fea-block h4 {
     display: flex;
@@ -810,23 +816,42 @@ body {
     height: 449px;
     background: #5b9324;
 }
-.fea-block-one h6{
+
+.fea-block-one h6 {
     color: #95FEC1;
     font-size: 12px;
     font-weight: 400;
     text-transform: uppercase;
 }
-.fea-block-one h9{
+
+.fea-block-one h9 {
     color: #FFF;
     font-size: 28px;
     font-weight: 400;
 }
-.fea-block-one h7{
+
+.fea-block-one h7 {
     color: #FFF;
     font-size: 14px;
     font-weight: 400;
     line-height: 22px;
 }
+.fea-block-one h5{
+    width: 97px;
+    color: #FFF;
+    font-size: 19px;
+    font-weight: 400;
+}
+
 
 /*fea-end*/
 
+/*claas-start*/
+#class {
+    background: black;
+    padding-top: 150px;
+
+}
+
+
+/*claas-end*/

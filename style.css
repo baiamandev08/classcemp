@@ -34,7 +34,7 @@ body {
     /*z-index: 100;*/
 
     position: sticky;
-    top: 0px;
+    top: 0;
     z-index: 100;
 
     animation: header .5s alternate;
@@ -172,6 +172,10 @@ body {
     /*z-index: 100;*/
 }
 
+.hero button:hover {
+    color: #FFFFFF;
+    background: blue;
+}
 
 /*<!--hero-end-->*/
 
@@ -185,7 +189,7 @@ body {
 
 .shoot-text h1 {
     padding-bottom: 38px;
-    width: 442px;
+    width: 40%;
     color: #FFF;
     font-size: 58px;
     font-weight: 400;
@@ -194,7 +198,7 @@ body {
 }
 
 .shoot-text p {
-    width: 452px;
+    width: 45%;
     color: rgba(255, 255, 255, 0.50);
     font-size: 26px;
     font-weight: 400;
@@ -218,8 +222,10 @@ body {
 
 .shoot-one {
     position: absolute;
-    right: 70px;
-    top: 100px;
+    /*right: 70px;*/
+    right: 25%;
+    /*top: 100px;*/
+    top: 15%;
 }
 
 .shoot-two {
@@ -240,6 +246,7 @@ body {
     font-size: 58px;
     font-weight: 400;
     line-height: 70.4px;
+    padding-left: 133px;
 }
 
 .enrich-text p {
@@ -247,7 +254,10 @@ body {
     font-size: 27px;
     font-weight: 400;
     line-height: 37.8px;
-    width: 524px;
+    /*width: 524px;*/
+    width: 60%;
+    padding: 0 0 0 133px;
+
 }
 
 .enrich-text p span {
@@ -287,7 +297,7 @@ body {
 }
 
 .add-text h1 {
-    width: 404px;
+    width: 80%;
     color: #FFF;
     font-size: 54px;
     font-weight: 400;
@@ -296,7 +306,7 @@ body {
 
 .add-text p {
     padding-top: 38px;
-    width: 526px;
+    width: 70%;
     color: rgba(255, 255, 255, 0.50);
     font-size: 27px;
     font-weight: 400;
@@ -533,7 +543,7 @@ body {
 }
 
 .the-block-text h3 {
-    width: 223px;
+    width: 90%;
     color: #FFF;
     text-align: center;
     font-size: 29px;
@@ -590,12 +600,19 @@ body {
     animation: block 1s alternate linear;
 }
 
+.the-block img {
+    width: 100%;
+}
+
 @keyframes block {
     0% {
         transform: translateY(100px);
     }
 }
 
+.the-block:hover > .the-block-text h3 h5 h6 {
+    animation: block .5s alternate linear;
+}
 
 .the-general {
     display: flex;
@@ -619,14 +636,16 @@ body {
 }
 
 .offer h1 {
+    width: 787px;
     padding: 21px 0 32px 0;
     color: #FFF;
     font-size: 58px;
     font-weight: 400;
-    line-height: 83.2px;
+    line-height: 83px;
 }
 
 .offer p {
+    width: 904px;
     color: rgba(255, 255, 255, 0.50);
     font-size: 27px;
     font-weight: 400;
@@ -634,9 +653,11 @@ body {
 }
 
 .offer {
+
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 .offer img {
@@ -690,6 +711,8 @@ body {
     padding: 15px 25px;
     display: flex;
     align-items: center;
+    /*border: 3px solid navajowhite;*/
+
 }
 
 .will-block button ion-icon {
@@ -700,6 +723,11 @@ body {
 .will {
     display: flex;
     justify-content: center;
+}
+
+.will-block button:hover {
+    color: #FFFFFF;
+    background: #2fc8ff;
 }
 
 /*will-end*/
@@ -729,7 +757,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    text-align: center;
+    /*justify-content: center;*/
     height: 60vh;
 
 }
@@ -753,10 +782,10 @@ body {
     font-size: 58px;
     font-weight: 400;
 }
-.logo h1{
+
+.logo h1 {
     padding: 100px 0 100px 0;
 }
-
 
 
 .fea-general {
@@ -777,6 +806,15 @@ body {
     background: #5b9324
 
 }
+
+.fea-block h1 {
+    padding: 17px 0 23px 0;
+    color: #FFF;
+    font-size: 29px;
+    font-weight: 400;
+    line-height: 36px;
+}
+
 
 .fea-block h2 {
     color: #95FEC1;
@@ -824,34 +862,123 @@ body {
     text-transform: uppercase;
 }
 
-.fea-block-one h9 {
+.fea-block-one h5 {
+    padding: 17px 0 23px 0;
     color: #FFF;
     font-size: 28px;
     font-weight: 400;
 }
 
-.fea-block-one h7 {
+.fea-block-one h4 {
     color: #FFF;
     font-size: 14px;
     font-weight: 400;
     line-height: 22px;
 }
-.fea-block-one h5{
-    width: 97px;
+
+.fea-general button {
+    margin: 180px 0 0 196px;
+    display: flex;
+    background: #FF4343;
+    padding: 7px 15px;
     color: #FFF;
     font-size: 19px;
     font-weight: 400;
 }
 
+.fea-block button {
+    margin: 100px 0 0 196px;
+}
 
-/*fea-end*/
+.fea-general button ion-icon {
+    padding: 10px 0 0 15px;
+    font-size: 30px;
+}
 
-/*claas-start*/
-#class {
-    background: black;
-    padding-top: 150px;
+.fea-hover h1 {
+    padding: 371px 0 0 15px;
+    color: #FFF;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 20px;
+    z-index: 1;
+    position: absolute;
+}
+
+.fea-hover img {
+    position: relative;
+}
+
+.fea-hover ion-icon {
+padding: 10px;
+    font-size: 30px
+}
+.fea-hover h6{
+    padding: 409px 0 20px 80px ;
+    z-index: 1;
+    font-size: 18px;
+    color: #FFFFFF;
+position: absolute;
 
 }
 
+/*footer start*/
 
-/*claas-end*/
+#footer {
+    background: black;
+    padding: 119px 0 0 0;
+}
+
+.footer-img {
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.product h1 {
+    padding: 0 0 64px 0;
+
+}
+
+.product {
+    padding: 0 0 0 50px;
+
+}
+
+.Contact h1 {
+    padding: 0 0 64px 0;
+
+}
+
+.Contact {
+    padding: 0 0 0 50px;
+
+}
+
+.Res h1 {
+    padding: 0 0 64px 0;
+}
+
+.Res {
+    padding: 0 0 0 50px;
+
+}
+
+.footer-img {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding: 0 0 0 50px;
+}
+
+
+.ion {
+    display: flex;
+    justify-content: space-between;
+    font-size: 34px;
+    /*padding: 0 10px ;*/
+}
+
+
+/*footer end*/
